@@ -1,0 +1,9 @@
+.halfCircle {
+	border-radius: 200px 200px 0 0;
+	border-top: 5px solid var(--first-color);
+	border-left: 5px solid var(--first-color);
+	border-right: 5px solid var(--first-color);
+	height: 100px;
+	width: 200px;
+	margin: auto;
+}

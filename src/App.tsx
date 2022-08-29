@@ -1,5 +1,6 @@
 import './App.css';
-import AnalogClock from './components/AnalogClock/AnalogClock';
+import { AnalogClock } from './components/AnalogClock/AnalogClock';
+import { HalfCircle } from './components/HalfCircle/HalfCircle';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
       <div className="clock__container grid">
         <div className="clock__content grid">
           <AnalogClock />
+          <HalfCircle />
         </div>
       </div>
     </section>
