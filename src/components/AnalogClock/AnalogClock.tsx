@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { TIME_SERVER } from "../../constants/timeServer";
 import "./AnalogClock.css";
 
 export const AnalogClock = () => {
@@ -15,7 +16,7 @@ export const AnalogClock = () => {
   const [timer] = useState(setTimeout(clock, 1000));
 
   useEffect(() => {
-    fetch('http://worldtimeapi.org/api/timezone/Europe/Moscow')
+    fetch(TIME_SERVER)
       .then(res => {
         if (res.status === 200) return res.json()
       })
