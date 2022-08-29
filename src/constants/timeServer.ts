@@ -1,1 +1,1 @@
-export const TIME_SERVER = 'http://worldtimeapi.org/api/timezone/Europe/Moscow';
+export const TIME_SERVER = 'https://worldtimeapi.org/api/timezone/Europe/Moscow';
