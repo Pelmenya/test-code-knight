@@ -21,7 +21,7 @@ export const AnalogClock = () => {
         if (res.status === 200) return res.json()
       })
       .then(data => {
-        let date = new Date(data.datetime)
+        let date = new Date(data.data.datetime.date_time_ymd)
         setDate(date.getTime());
         let hh = date.getHours() * 30,
           mm = date.getMinutes() * 6,
